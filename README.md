@@ -1,2 +1,2 @@
 # IceSugarNano
-Oneware integration for icesugarnano
+Oneware integration for icesugar-nano
