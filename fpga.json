@@ -1,0 +1,66 @@
+{
+  "properties": {
+    "yosysToolchainYosysSynthTool": "synth_ice40",
+    "yosysToolchainYosysFlags": "",
+    "yosysToolchainNextPnrTool": "nextpnr-ice40",
+    "yosysToolchainNextPnrFlags": "--package cm36 --lp1k",
+    "yosysToolchainPackTool": "icepack",
+    "yosysToolchainPackFlags": "",
+    "openFpgaLoaderBoard": "icesugar-nano",
+    "openFpgaLoaderShortTermFlags": "",
+    "openFpgaLoaderLongTermFlags": ""
+  },
+  "pins": [
+    { "description": "i_CLK", "name": "D1" },
+    { "description": "o_LED_1", "name": "B6" },
+    { "description": "UART_RX", "name": "A3" },
+    { "description": "UART_TX", "name": "B3" },
+    { "description": "io_PMOD1_1", "name": "B4" },
+    { "description": "io_PMOD1_2", "name": "C6" },
+    { "description": "io_PMOD1_3", "name": "B5" },
+    { "description": "io_PMOD1_4", "name": "E3" },
+    { "description": "io_PMOD1_5", "name": "E1" },
+    { "description": "io_PMOD1_6", "name": "C2" },
+    { "description": "io_PMOD1_7", "name": "B1" },
+    { "description": "io_PMOD1_8", "name": "A1" },
+    { "description": "io_PMOD2_1", "name": "C5" },
+    { "description": "io_PMOD2_2", "name": "E2" }
+  ],
+  "interfaces": [
+    {
+      "name": "i_CLK",
+      "pins": [{ "name": "1", "pin": "D1" }]
+    },
+    {
+      "name": "o_LED_1",
+      "pins": [{ "name": "1", "pin": "B6" }]
+    },
+    {
+      "name": "i_UART",
+      "pins": [
+        { "name": "1", "pin": "A3" },
+        { "name": "2", "pin": "B3" }
+      ]
+    },
+    {
+      "name": "io_PMOD1",
+      "pins": [
+        { "name": "1", "pin": "B4" },
+        { "name": "2", "pin": "C6" },
+        { "name": "3", "pin": "B5" },
+        { "name": "4", "pin": "E3" },
+        { "name": "5", "pin": "E1" },
+        { "name": "6", "pin": "C2" },
+        { "name": "7", "pin": "B1" },
+        { "name": "8", "pin": "A1" }
+      ]
+    },
+    {
+      "name": "io_PMOD2",
+      "pins": [
+        { "name": "1", "pin": "C5" },
+        { "name": "2", "pin": "E2" }
+      ]
+    }
+  ]
+}
